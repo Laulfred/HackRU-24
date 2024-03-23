@@ -110,6 +110,7 @@ const Home = () => {
                                 <ListItemButton
                                     LinkComponent={Link}
                                     to={`/store/${store.Store}`}
+                                    key={store.Store}
                                 >
                                     <ListItemText
                                         primary={`Store #${store.Store}`}

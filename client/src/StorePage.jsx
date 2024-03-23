@@ -6,7 +6,10 @@ import {
     CardContent,
     Divider,
     ListItemIcon,
+    CardActions,
+    Button,
 } from "@mui/material/";
+import { Link } from "react-router-dom";
 
 const StorePage = ({ store }) => {
     const storeData = store[0];
@@ -129,9 +132,31 @@ const StorePage = ({ store }) => {
                                     <Typography variant="body1">
                                         Price: {item.Price}
                                     </Typography>
-                                    
-                                        
+                                    <Typography
+                                        variant="body1"
+                                        fontWeight="bold"
+                                        sx={{
+                                            color: sustainable
+                                                ? "green"
+                                                : "red",
+                                        }}
+                                    >
+                                        {sustainable
+                                            ? "Sustainable"
+                                            : "Not Sustainable"}
+                                    </Typography>
                                 </CardContent>
+                                <CardActions>
+                                    <ListItemIcon>
+                                        <Button
+                                            color="primary"
+                                            LinkComponent={Link}
+                                            to={`/item/${item.UPC}`}
+                                        >
+                                            Learn More
+                                        </Button>
+                                    </ListItemIcon>
+                                </CardActions>
                             </Card>
                         </Grid>
                     );
