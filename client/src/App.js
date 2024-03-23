@@ -59,7 +59,14 @@ function App() {
 
     return (
         <Switch>
-            <Route path="/store" render={() => <StorePage data={stores[i+1]} />} />
+            <Route
+                path="/store/:id"
+                render={(props) => {
+                    
+                    return (
+                    <StorePage store={stores.filter((store) => store.Store == props.match.params.id)} />
+                )}}
+            />
             <Route path="/" component={Home} />
         </Switch>
     );
