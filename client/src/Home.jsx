@@ -70,7 +70,9 @@ const Home = () => {
     return (
         <div className="App">
             <Container maxWidth="sm">
-                <Typography variant="h2">SusFoods</Typography>
+                <Typography variant="h2"
+                
+                >SusFoods</Typography>
                 <Typography variant="h4">
                     Helping you shop for environmentally sustainable foods
                 </Typography>
