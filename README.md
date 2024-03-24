@@ -1,5 +1,5 @@
 # SusFoods
-- Helping you shop for environmentally sustainable foods!
+Helping you shop for environmentally sustainable foods!
 
 
 HackRU 2024
