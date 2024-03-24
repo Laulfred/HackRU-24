@@ -1012,3 +1012,219 @@ const determineSustainability = (item) => {
 function getSustainability(item) {
         determineSustainability(item);
 }
+
+/*
+const getInput = (item) => {
+  switch (item.Description) {
+    case "corn flour":
+      input = "is corn flour sustainable?";
+    case "celery seeds":
+      input = "are celery seeds sustainable?";
+    case "habanero chilies":
+      input = "are habanero chilies sustainable?";
+    case "watermelons":
+      input = "are watermelons sustainable?";
+    case "sesame seeds":
+      input = "are sesame seeds sustainable?";
+    case "thyme":
+      input = "is thyme sustainable?";
+    case "chaurice sausage":
+      input = "is chaurice sausage sustainable?";
+    case "asiago cheese":
+      input = "is asiago cheese sustainable?";
+    case "heavy cream":
+      input = "is heavy cream sustainable?";
+    case "gouda":
+      input = "is gouda sustainable?";
+    case "ricotta cheese":
+      input = "is ricotta cheese sustainable?";
+    case "gorgonzola":
+      input = "is gorgonzola sustainable?";
+    case "swiss cheese":
+      input = "is swiss cheese sustainable?";
+    case "bruschetta":
+      input = "is bruschetta sustainable?";
+    case "pork":
+      input = "is pork sustainable?";
+    case "sushi":
+      input = "is sushi sustainable?";
+    case "green onions":
+      input = "are green onions sustainable?";
+    case "figs":
+      input = "are figs sustainable?";
+    case "leeks":
+      input = "are leeks sustainable?";
+    case "sauerkraut":
+      input = "is sauerkraut sustainable?";
+    case "avocados":
+      input = "are avocados sustainable?";
+    case "garlic powder":
+      input = "is garlic powder sustainable?";
+    case "Tabasco sauce":
+      input = "is Tabasco sauce sustainable?";
+    case "margarine":
+      input = "is margarine sustainable?";
+    case "chile peppers":
+      input = "are chile peppers sustainable?";
+    case "maple syrup":
+      input = "is maple syrup sustainable?";
+    case "Parmesan cheese":
+      input = "is Parmesan cheese sustainable?";
+    case "pecans":
+      input = "are pecans sustainable?";
+    case "cranberries":
+      input = "are cranberries sustainable?";
+    case "broth":
+      input = "is broth sustainable?";
+    case "shrimp":
+      input = "are shrimp sustainable?";
+    case "squid":
+      input = "is squid sustainable?";
+    case "horseradish":
+      input = "is horseradish sustainable?";
+    case "truffles":
+      input = "are truffles sustainable?";
+    case "broccoli raab":
+      input = "is broccoli raab sustainable?";
+    case "graham crackers":
+      input = "are graham crackers sustainable?";
+    case "cremini mushrooms":
+      input = "are cremini mushrooms sustainable?";
+    case "lentils":
+      input = "are lentils sustainable?";
+    case "chard":
+      input = "is chard sustainable?";
+    case "tomato paste":
+      input = "is tomato paste sustainable?";
+    case "grouper":
+      input = "is grouper sustainable?";
+    case "cabbage":
+      input = "is cabbage sustainable?";
+    case "creme fraiche":
+      input = "is creme fraiche sustainable?";
+    case "liver":
+      input = "is liver sustainable?";
+    case "black olives":
+      input = "are black olives sustainable?";
+    case "beef":
+      input = "is beef sustainable?";
+    case "Havarti cheese":
+      input = "is Havarti cheese sustainable?";
+    case "cashew nut":
+      input = "are cashew nuts sustainable?";
+    case "buckwheat":
+      input = "is buckwheat sustainable?";
+    case "limes":
+      input = "are limes sustainable?";
+    case "snap peas":
+      input = "are snap peas sustainable?";
+    case "black beans":
+      input = "are black beans sustainable?";
+    case "apricots":
+      input = "are apricots sustainable?";
+    case "five-spice powder":
+      input = "is five-spice powder sustainable?";
+    case "vinegar":
+      input = "is vinegar sustainable?";
+    case "cactus":
+      input = "is cactus sustainable?";
+    case "ancho chile peppers":
+      input = "are ancho chile peppers sustainable?";
+    case "wasabi":
+      input = "is wasabi sustainable?";
+    case "butter":
+      input = "is butter sustainable?";
+    case "blackberries":
+      input = "are blackberries sustainable?";
+    case "coffee":
+      input = "is coffee sustainable?";
+    case "coriander":
+      input = "is coriander sustainable?";
+    case "brussels sprouts":
+      input = "are brussels sprouts sustainable?";
+    case "sausages":
+      input = "are sausages sustainable?";
+    case "brazil nuts":
+      input = "are brazil nuts sustainable?";
+    case "trout":
+      input = "is trout sustainable?";
+    case "cocoa powder":
+      input = "is cocoa powder sustainable?";
+    case "mustard":
+      input = "is mustard sustainable?";
+    case "tuna":
+      input = "is tuna sustainable?";
+    case "sage":
+      input = "is sage sustainable?";
+    case "Worcestershire sauce":
+      input = "is Worcestershire sauce sustainable?";
+    case "dried leeks":
+      input = "are dried leeks sustainable?";
+    case "corned beef":
+      input = "is corned beef sustainable?";
+    case "red cabbage":
+      input = "is red cabbage sustainable?";
+    case "ice cream":
+      input = "is ice cream sustainable?";
+    case "sunflower seeds":
+      input = "are sunflower seeds sustainable?";
+    case "salt":
+      input = "is salt sustainable?";
+    case "steak":
+      input = "is steak sustainable?";
+    case "spaghetti squash":
+      input = "is spaghetti squash sustainable?";
+    case "potato chips":
+      input = "are potato chips sustainable?";
+    case "onions":
+      input = "are onions sustainable?";
+    case "lobsters":
+      input = "are lobsters sustainable?";
+    case "hot sauce":
+      input = "is hot sauce sustainable?";
+    case "blueberries":
+      input = "are blueberries sustainable?";
+    case "vanilla bean":
+      input = "is vanilla bean sustainable?";
+    case "cantaloupes":
+      input = "are cantaloupes sustainable?";
+    case "capers":
+      input = "are capers sustainable?";
+    case "sweet chili sauce":
+      input = "is sweet chili sauce sustainable?";
+    case "water":
+      input = "is water sustainable?";
+    case "bean sauce":
+      input = "is bean sauce sustainable?";
+    case "portabella mushrooms":
+      input = "are portabella mushrooms sustainable?";
+    default:
+      input = "Tell me more about sustainability";
+  }
+}
+
+
+
+async function run(model, input) {
+  const response = await fetch(
+    `https://api.cloudflare.com/client/v4/accounts/6cbc3e4ecf126052588f1e2d0de14076/ai/run/@cf/meta/llama-2-7b-chat-int8`,
+    {
+      headers: { Authorization: "Bearer 8d90d9c6541816abf6257cab0f41711c9ed77" },
+      method: "POST",
+      body: JSON.stringify(input),
+    }
+  );
+  const result = await response.json();
+  return result;
+}
+
+
+const main = async () => {
+  const model = "llama-2-7b-chat-int8";
+  const input = "is corn flour sustainable?";
+  const result = await run(model, input);
+  console.log(result);
+}
+
+main();
+*/
