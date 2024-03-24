@@ -71,13 +71,26 @@ const Home = () => {
         <div className="App">
             <Container maxWidth="sm">
                 <Typography variant="h2"
-                
+                    sx={{
+                        color: "green",
+                        fontWeight: "bold",
+                        fontFamily: "Arial",
+                        fontSize: "100px",
+                        textAlign: "center",
+                    }}
                 >SusFoods</Typography>
-                <Typography variant="h4">
+                <Typography variant="h4"
+                    sx={{
+                        padding: "10px",
+                    }}
+                >
                     Helping you shop for environmentally sustainable foods
                 </Typography>
 
                 <TextField
+                    sx={{
+                        mt: 4,
+                    }}
                     id="outlined-basic"
                     label="Search by town or zip code"
                     variant="outlined"
