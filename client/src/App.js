@@ -107,7 +107,7 @@ function App() {
     ]);
      
     useEffect(() => {
-        axios.get("/api/products", {
+        axios.get("/api/stores", {
         }).then((res) => {
             setStores(res.data)
             setLoading(false)
@@ -139,9 +139,7 @@ function App() {
             />
             <Route
                 path="/item/:id"
-                render={(props) => <FoodItem item={items.filter(
-                    (item) => item.UPC == props.match.params.id
-                )} />}      
+                render={(props) => <FoodItem id={props.match.params.id} />}      
                 
             />
             <Route path="/" exact render={() => <Home stores={stores} />} />
